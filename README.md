@@ -47,7 +47,7 @@ To verify that everything is set properly, go to the Windows 10 VM, run Command 
 
     netsh advfirewall firewall add rule name="ICMP Allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=allow
 
-Then, use ipconfig for both VMs' command prompts and ping the Windows 10 VM from the Windows Server VM, using the listed IPv4 Addresses. If the addresses are not 192.168… and are instead 169.254… then use the ipconfig /release command.
+Then, use ipconfig for both VMs' command prompts and ping the Windows 10 VM from the Windows Server VM (ping 192.168.10.101), using the listed IPv4 Addresses. If the addresses are not 192.168… and are instead 169.254… then use the ipconfig /release command.
 
 <img src="https://i.imgur.com/HM0VwYI.png" height="70%" width="70%"/>
 
